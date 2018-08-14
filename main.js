@@ -7,3 +7,9 @@ var config = {
   messagingSenderId: "675252922865"
 };
 firebase.initializeApp(config);
+
+// submit on click 
+  // add new employee
+
+// on child added
+  // populate table rows
