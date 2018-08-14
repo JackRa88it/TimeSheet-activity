@@ -8,6 +8,13 @@ var config = {
 };
 firebase.initializeApp(config);
 
+var database = firebase.database()
+
+var employeeName;
+var role;
+var startDate;
+var monthlyRate;
+
 // submit on click 
   // add new employee
 
