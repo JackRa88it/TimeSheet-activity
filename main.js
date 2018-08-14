@@ -19,6 +19,28 @@ var totalBilled;
 
 // submit on click 
   // add new employee
+  $("#submit").on("click", function(event) {
+    event.preventDefault();
+  
+    // Get the input values
+    employeeName = $("#employeeName").val().trim();
+    role = $("#role").val().trim();
+    startDate = $("#startDate").val().trim();
+    monthlyRate = parseInt($("#monthlyRate").val().trim())
+
+
+
+    database.ref().push({
+        employeeName: employeeName,
+        role: role,
+        startDate: startDate,
+        monthlyRate: monthlyRate,
+        dateAdded: firebase.database.ServerValue.TIMESTAMP
+
+    });
+
+  });
+  
 
 // on child added
   // populate table rows
