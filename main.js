@@ -45,7 +45,7 @@ var totalBilled;
 // on child added
   // populate table rows
 
-database.ref().on("childAdded", function(event) {
+database.ref().on("child_added", function(event) {
   var newRow = $("<tr>")
   // Columns in Current Employees Div
   var tdName = $("<td>")
